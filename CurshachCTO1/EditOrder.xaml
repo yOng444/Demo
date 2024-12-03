@@ -1,0 +1,55 @@
+﻿<Window x:Class="CurshachCTO1.EditOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurshachCTO1"
+        mc:Ignorable="d"
+        Title="Редактирование заявки" Height="600" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Панель для полей редактирования заявки -->
+        <StackPanel Grid.Row="0" Margin="20">
+            <TextBlock Text="Номер заявки" />
+            <TextBox x:Name="ApplicationNumberTextBox" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Дата заявки" />
+            <TextBox x:Name="RequestDateTextBox" Width="200" Margin="0,10,0,0" IsReadOnly="True" />
+
+            <TextBlock Text="Имя клиента" />
+            <TextBox x:Name="ClientTextBox" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Телефон клиента" />
+            <TextBox x:Name="PhoneTextBox" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Марка машины" />
+            <TextBox x:Name="CarBrandTextBox" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Модель машины" />
+            <TextBox x:Name="CarModelTextBox" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Год выпуска" />
+            <TextBox x:Name="CarYearTextBox" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Тип услуги" />
+            <ComboBox x:Name="ServiceComboBox" DisplayMemberPath="Name" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Работник" />
+            <ComboBox x:Name="EmployeeComboBox" DisplayMemberPath="Fullname" Width="200" Margin="0,10,0,0" />
+
+            <TextBlock Text="Статус заявки" />
+            <ComboBox x:Name="StatusComboBox" DisplayMemberPath="StatusName" Width="200" Margin="0,10,0,0" />
+        </StackPanel>
+
+        <!-- Кнопки для сохранения и отмены -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Button Content="Сохранить" Width="100" Height="30" x:Name="BtnEdit1" Click="BtnEdit1_Click"/>
+            <Button Content="Отмена" Width="100" Height="30" x:Name="BtnCancel" Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

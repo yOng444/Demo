@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e432e141f52b4ae5bfa3628b6a0e58b2" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="CTOVERModel.Cars" Width="1.5" PointX="7.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CTOVERModel.Clients" Width="1.5" PointX="0.625" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CTOVERModel.Employees" Width="1.5" PointX="0.625" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CTOVERModel.Orders" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CTOVERModel.RequestStatus" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CTOVERModel.Services" Width="1.5" PointX="4.875" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="CTOVERModel.FK__Orders__CarId__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="CTOVERModel.FK__Orders__ClientId__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="CTOVERModel.FK__Orders__Employee__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="CTOVERModel.FK__Orders__ServiceI__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="CTOVERModel.FK__Orders__StatusId__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="CTOVERModel.FK_Orders_RequestStatus" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CTOVERModel.Roles" PointX="7.375" PointY="5.75" Width="1.5" />
+        <EntityTypeShape EntityType="CTOVERModel.Users" PointX="9.625" PointY="5.5" Width="1.5" IsExpanded="true" />
+        <AssociationConnector Association="CTOVERModel.FK__Users__RoleId__5EBF139D" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
